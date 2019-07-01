@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  construction(prop) {
-    super(prop);
+  constructor(props) {
+    super(props);
     this.state = { apiResponse: ""};
   }
   callAPI() {
@@ -24,7 +24,7 @@ class App extends Component {
           <img src={logo} className="App-header" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-title">Welcome to React</p>
+        <p className="App-intro">;{this.state.apiResponse}</p>
       </div>
     )
   }

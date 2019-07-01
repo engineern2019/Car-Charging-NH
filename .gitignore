@@ -1,1 +1,12 @@
 /.metadata/
+    
+// intellij
+.idea
+target
+*.iml
+
+// eclipse
+.settings/
+.classpath
+.project
+target
