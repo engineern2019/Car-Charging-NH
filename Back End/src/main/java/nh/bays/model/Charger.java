@@ -10,6 +10,19 @@ public class Charger {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    Long id;
+    String Unit;
+    String description;
+    String name;
+
+
+    public void setUnit(String Unit){
+        this.Unit=Unit;
+    }
+    public String getUnit(String Unit){
+        return this.Unit;
+    }
+
     public Long getId() {
         return id;
     }
@@ -19,11 +32,11 @@ public class Charger {
     }
 
     public String getName() {
-        return Unit;
+        return name;
     }
 
     public void setName(String name) {
-        this.Unit = name;
+        this.name = name;
     }
 
     public String getDescription() {
@@ -33,9 +46,5 @@ public class Charger {
     public void setDescription(String description) {
         this.description = description;
     }
-
-    Long id;
-    String Unit;
-    String description;
 
 }

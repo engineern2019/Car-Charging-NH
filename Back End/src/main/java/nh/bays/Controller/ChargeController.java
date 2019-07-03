@@ -8,26 +8,28 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1")
-
 public class ChargeController {
 
     @Autowired
     private ChargeRepository chargeRepository;
 
-    @RequestMapping(value = "notes", method = RequestMethod.GET)
+    @CrossOrigin("http://localhost:3306")
+    @RequestMapping(value = "/allchargers", method = RequestMethod.GET)
     public List<Charger> list(){
+
         return chargeRepository.findAll();
     }
 
-    @RequestMapping(value = "notes", method = RequestMethod.POST)
-    public Charger create(@RequestBody Charger charger){
+    @RequestMapping(value = "/chargerEntry", method = RequestMethod.POST)
+    public Charger create( Charger charger){
+
         return chargeRepository.saveAndFlush(charger);
     }
 
     @RequestMapping(value = "notes/{id}", method = RequestMethod.GET)
     public Charger getNote(@PathVariable long id){
         return chargeRepository.findOne(id);
+
     }
 
     @RequestMapping(value = "notes/{id}", method = RequestMethod.DELETE)
