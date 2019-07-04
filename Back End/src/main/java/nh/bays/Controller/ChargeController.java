@@ -27,7 +27,7 @@ public class ChargeController {
     }
 
     @RequestMapping(value = "notes/{id}", method = RequestMethod.GET)
-    public Charger getNote(@PathVariable long id){
+    public Charger getCharger(@PathVariable long id){
         return chargeRepository.findOne(id);
 
     }
