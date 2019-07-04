@@ -28,16 +28,7 @@
                         <li class="nav-item">
                           <a class="nav-link" href="C:/Users/user/Desktop/project/Car Charging at NH/Front End/FaultEntry.html">Report Faults</a>
                         </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown link
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                        </li>
+
                       </ul>
                     </div>
                   </nav>
@@ -51,19 +42,22 @@
                   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
                   crossorigin="anonymous"></script>
     
-                  <img src="nwlogo.jpg"><img src="nwhouse.jpg"><img src="nwch.jpg">
+                  <img src="nwlogo.jpg" class="rounded float-left" alt="...">
+                <img src="nwhouse.jpg" class="rounded float-right" alt="...">
+
+                <form action="http://localhost:8080/chargerEntry" method="post">
 
 <div>
-    Service Provider <input name="name"><br>
+     <input name="name" placeholder="Service Provider"><br>
 
-    Enter Fault Description:<input name="description"><br>
+    <input name="description" placeholder="Enter Fault Description:"><br>
 
-    Enter Unit Number:<input name="Unit"><br>
+    <input name="Unit" placeholder="Enter Unit Number:"><br>
 
 </div>
-<form action="http://localhost:8080/chargerEntry" method="post"></form>
 
 <input type="submit">
+<form>
 
 </body>
 
