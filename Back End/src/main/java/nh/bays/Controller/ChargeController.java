@@ -13,7 +13,7 @@ public class ChargeController {
     @Autowired
     private ChargeRepository chargeRepository;
 
-    @CrossOrigin("http://localhost:3306")
+    @CrossOrigin("http://localhost:8080")
     @RequestMapping(value = "/allchargers", method = RequestMethod.GET)
     public List<Charger> list(){
 

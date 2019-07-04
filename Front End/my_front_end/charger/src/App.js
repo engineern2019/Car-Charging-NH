@@ -22,7 +22,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-header" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Nationwide House EV Charging</h1>
         </header>
         <p className="App-intro">;{this.state.apiResponse}</p>
       </div>
