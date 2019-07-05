@@ -6,13 +6,14 @@
     , initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
     crossorigin="anonymous">
     <title>Nationwide House Charging</title>
 </head>
 <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">NHC</a>
+                <a class="navbar-brand" href="#"><img src="" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,8 +41,55 @@
               <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
               integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
               crossorigin="anonymous"></script>
+              <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
 
               <img src="nwlogo.jpg"><img src="nwhouse.jpg"><img src="nwch.jpg">
+
+              <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Charger</th>
+                      <th scope="col">Unit No</th>
+                      <!-- <th scope="col">Handle</th> -->
+                      <input type="checkbox" checked data-toggle="toggle" data-on="Ready" data-off="Not Ready" data-onstyle="success" data-offstyle="danger">
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>7kw Polar Charger</td>
+                      <td>1010</td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>7kw Polar Charger</td>
+                      <td>1020</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>7kw Polar Charger</td>
+                      <td>1030</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>7kw Polar Charger</td>
+                        <td>1040</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">5</th>
+                          <td>7kw Polar Charger</td>
+                          <td>1050</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>7kw Polar Charger</td>
+                            <td>1060</td>
+                          </tr>
+                  </tbody>
+                </table>
 
 </body>
 </html>
